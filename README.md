@@ -52,6 +52,53 @@ Ex: my container configuration
    sh gitPushMirror.sh
    ~~~
 
+### Example of execution
+
+1. Run gitrepos.py
+
+~~~bash
+
+~~~
+
+2. Add data and files
+
+~~~bash
+
+~~~
+
+3. Git add and git commit
+  
+~~~bash
+
+~~~
+
+4. Git push mirror
+
+~~~sh
+'COMMAND'
+$ sh gitPushMirror.sh
+
+'OUTPUT' 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://gitlab.com/Nuria_Liano/gitrepos.git
+   ba06cf8..c4f36cf  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NuriaLiano/gitrepos
+   ba06cf8..c4f36cf  master -> master
+Everything up-to-date
+~~~
+
 ## What data I need
 
 The first time you run the script it will ask for all the variables it does not find and generate the `.config.json` file both in the container and locally.
