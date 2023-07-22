@@ -4,7 +4,7 @@
 
 ## What is GITREPOS
 
-GITREPOS es un script en Python que facilita la automatización de tareas relacionadas con la creación y eliminación de repositorios en GitHub y GitLab. Además, proporciona la funcionalidad para conectar estos repositorios en un "mirror", lo que permite que los cambios realizados en uno de los repositorios se reflejen automáticamente en el otro.
+GITREPOS is a Python script that simplifies the automation of tasks related to creating and deleting repositories on GitHub and GitLab. Additionally, it provides the functionality to connect these repositories in a "mirror," enabling changes made in one repository to automatically reflect in the other.
 
 ## What is in GITREPOS repository
 
