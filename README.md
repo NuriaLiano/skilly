@@ -9,7 +9,7 @@ GITREPOS es un script en Python que facilita la automatización de tareas relaci
 ## What is in GITREPOS repository
 
 - **gitrepos.py**: This is the main script what create and configurate or remove the repositories.
-- **gitPushMirror.sh**: This script is only for run `git push` command on both repositories.
+- **gitPushMirror.sh**: You need copy this script on the repository. This script is only for run `git push` command on both repositories.
 - **requirements.txt**: This file contain all necessary packages for run gitrepos
 - **container.config.json**: This file is an example of how your .config.json (container) will look like
 - **local.config.json**: This file is an example of how your .config.json (local dir repository) will look like
@@ -57,18 +57,44 @@ Ex: my container configuration
 1. Run gitrepos.py
 
 ~~~bash
+'COMMAND'
+$ python {your_path}/gitrepos.py
 
+'OUTPUT'
+Do you want remove or create new repo? r/c: c
+Enter the repo name: testRepo
+[SUCCESS - CHECK CONTAINER CONFIG] gitlab\.config.json loaded successfully
+[SUCCESS - LOCAL CREATED] \gitlab\testRepo created successfully
+Enter the repo visibility: (public/private)
+[WARNING] press enter to set the repo visibility to "public"
+[SUCCESS - GITLAB CREATED] testRepo created successfully
+[CHECK] Go to https://gitlab.com/Nuria_Liano/testRepo.git to check it!
+Enter the repo visibility: (public/private)
+[WARNING] press enter to set the repo visibility to "public"
+[SUCCESS - GITHUB CREATED] testRepo created successfully
+[CHECK] Go to https://api.github.com/repos/NuriaLiano/testRepo to check it!
+[SUCCESS - README CREATED] \gitlab\testRepo/README.md created successfully
+[SUCCESS - README COMMITED] \gitlab\testRepo/README.md commited successfully
+[SUCCESS - README PUSHED] Push with upstream master
+[SUCCESS - MIRROR SET UP] https://github.com/NuriaLiano/testRepo set up successfully
 ~~~
 
 2. Add data and files
 
 ~~~bash
-
+touch README.md
 ~~~
 
 3. Git add and git commit
   
 ~~~bash
+'COMMAND'
+$ git add README.md
+$ git commit -m "update Readme"
+
+'OUTPUT'
+[master 0933f14] update Readme
+ 1 file changed, 47 insertions(+)
 
 ~~~
 
@@ -97,6 +123,21 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/NuriaLiano/gitrepos
    ba06cf8..c4f36cf  master -> master
 Everything up-to-date
+~~~
+
+5. (Optional) Remove repository
+
+~~~bash
+'COMMAND'
+$ python {your_path}/gitrepos.py
+
+'OUTPUT'
+Do you want remove or create new repo? r/c: r
+Enter the repo name: testRepo
+Are you sure you want to delete the repository? y/n: y
+[SUCCESS - GITHUB DELETE] https://api.github.com/repos/NuriaLiano/testRepo deleted successfully
+[SUCCESS - GITLAB DELETED] testRepo in GITLAB has been deleted
+[SUCCESS - LOCAL DELETED] \gitlab\testRepo has been deleted
 ~~~
 
 ## What data I need
