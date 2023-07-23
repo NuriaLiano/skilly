@@ -194,7 +194,7 @@ Visit my profiles or my website
         <a href="https://gitlab.com/nuria_liano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/gitlab.svg" /></a>
         <a href="https://github.com/nurialiano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/github.svg" /></a>
         <a href="https://twitter.com/nuria_liano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/twitter.svg"  /></a>
-        <a href="https://www.buymeacoffee.com/nurialiano" target="_blank"><img height="50" src="https://gitlab.com/Nuria_Liano/nurialiano/-/raw/main/icons/by-me-a-coffee.png" /></a>
+        <a href="https://www.buymeacoffee.com/lianonuria" target="_blank"><img height="50" src="https://gitlab.com/Nuria_Liano/nurialiano/-/raw/main/icons/by-me-a-coffee.png" /></a>
         <a href="www.nurialiano.es" target="_blank"><img height="50" src="https://gitlab.com/Nuria_Liano/nurialiano/-/raw/main/icons/nl_logo.png"/></a>
     </p>
 </div>
