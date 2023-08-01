@@ -1,6 +1,6 @@
 ---
-author: "@nurialiano"
-license: "Creative Commons Attribution-NonCommercial 4.0 International"
+author: '@nurialiano'
+license: Creative Commons Attribution-NonCommercial 4.0 International
 ---
 
 # Tablas
@@ -9,13 +9,13 @@ Una tabla es una estructura de datos que se utiliza para almacenar información 
 
 ## Partes de una tabla
 
-![partes de una tabla](img/partes-tablas.png)
+![partes de una tabla](.gitbook/assets/partes-tablas.png)
 
-- **Tablas**: las tablas son como hojas de papel donde se escribe la información. Cada tabla tiene un nombre y varias columnas donde se escriben los datos.
-- **Campos**: cada columna de una tabla se llama campo. Los campos pueden tener diferentes tipos de datos como texto, números o fechas.
-- **Registros**: cada fila de una tabla se llama registro. Cada registro contiene la información de un elemento o persona en particular.
-- **Claves**: las claves son como etiquetas especiales que se usan para identificar cada registro. Cada registro tiene una clave única que lo diferencia de los demás registros.
-- **Relaciones**: las relaciones son como líneas que unen las tablas entre sí. Las relaciones se usan para conectar la información que está en diferentes tablas.
+* **Tablas**: las tablas son como hojas de papel donde se escribe la información. Cada tabla tiene un nombre y varias columnas donde se escriben los datos.
+* **Campos**: cada columna de una tabla se llama campo. Los campos pueden tener diferentes tipos de datos como texto, números o fechas.
+* **Registros**: cada fila de una tabla se llama registro. Cada registro contiene la información de un elemento o persona en particular.
+* **Claves**: las claves son como etiquetas especiales que se usan para identificar cada registro. Cada registro tiene una clave única que lo diferencia de los demás registros.
+* **Relaciones**: las relaciones son como líneas que unen las tablas entre sí. Las relaciones se usan para conectar la información que está en diferentes tablas.
 
 ## Aspectos importantes y recomendaciones
 
@@ -23,17 +23,17 @@ Una tabla es una estructura de datos que se utiliza para almacenar información 
 
 Nombrar una tabla en una base de datos puede parecer una tarea simple, pero es importante seguir algunas recomendaciones para garantizar que el nombre de la tabla sea fácilmente comprensible y coherente con la estructura de la base de datos.
 
-- **Nombres descriptivos**
-- **Sustantivos singulares**
-- **Evitar abreviaciones y siglas**
-- **camelCase o snake_case**
-- **Evitar palabras reservadas y caracteres especiales**
-- **No utilizar números**
+* **Nombres descriptivos**
+* **Sustantivos singulares**
+* **Evitar abreviaciones y siglas**
+* **camelCase o snake\_case**
+* **Evitar palabras reservadas y caracteres especiales**
+* **No utilizar números**
 
->:pencil: **NOTA**
+> :pencil: **NOTA**
 >
-> - **camelCase**: la primera letra de cada palabra se escribe en mayúscula y las palabras se escriben juntas sin espacios.
-> - **snake_case**: las palabras se separan con un guión bajo.
+> * **camelCase**: la primera letra de cada palabra se escribe en mayúscula y las palabras se escriben juntas sin espacios.
+> * **snake\_case**: las palabras se separan con un guión bajo.
 
 ### Definir la estructura de la tabla
 
@@ -59,7 +59,7 @@ Es importante realizar copias de seguridad periódicas de las tablas para proteg
 
 ## Ejemplo
 
-~~~sql
+```sql
 CREATE TABLE clientes (
     id INT PRIMARY KEY,
     nombre VARCHAR(50),
@@ -67,7 +67,6 @@ CREATE TABLE clientes (
     email VARCHAR(100) UNIQUE,
     fecha_nacimiento DATE
 );
-~~~
+```
 
-En este ejemplo, hemos definido el nombre de la tabla como "clientes". Además, hemos especificado las columnas "id" (que es la clave primaria de la tabla), "nombre", "apellido", "email" y "fecha_nacimiento", cada una con su respectivo tipo de dato.
-También hemos establecido algunas restricciones: la columna "id" es la clave primaria de la tabla y, por lo tanto, no puede tener valores duplicados; la columna "email" tiene la restricción UNIQUE para asegurarnos de que cada email sea único en la tabla.
+En este ejemplo, hemos definido el nombre de la tabla como "clientes". Además, hemos especificado las columnas "id" (que es la clave primaria de la tabla), "nombre", "apellido", "email" y "fecha\_nacimiento", cada una con su respectivo tipo de dato. También hemos establecido algunas restricciones: la columna "id" es la clave primaria de la tabla y, por lo tanto, no puede tener valores duplicados; la columna "email" tiene la restricción UNIQUE para asegurarnos de que cada email sea único en la tabla.
