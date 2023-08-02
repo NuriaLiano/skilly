@@ -11,6 +11,7 @@ license: "Creative Commons Attribution-NonCommercial 4.0 International"
    3. [Set (conjuntos)](#set-conjuntos)
    4. [Arrays](#arrays)
    5. [Diccionarios](#diccionarios)
+   6. [Tabla comparativa resumen](#tabla-comparativa-resumen)
 
 ## Listas
 
@@ -65,3 +66,16 @@ mi_diccionario["edad"] = 31     # Modificar el valor de una clave existente
 mi_diccionario["ocupacion"] = "Ingeniero"  # Agregar un nuevo par clave-valor
 print(mi_diccionario)  # Salida: {'nombre': 'Juan', 'edad': 31, 'ciudad': 'Madrid', 'ocupacion': 'Ingeniero'}
 ~~~
+
+## Tabla comparativa resumen
+
+| Característica     | Listas                    | Sets                      | Arrays                    | Diccionarios               | Tuplas                    |
+|--------------------|---------------------------|---------------------------|---------------------------|----------------------------|---------------------------|
+| Tipo de datos      | Puede contener elementos de diferentes tipos de datos. | Contiene elementos únicos y no permite duplicados. | Puede contener elementos de un solo tipo de datos homogéneo. | Contiene pares clave-valor. | Puede contener elementos de diferentes tipos de datos. |
+| Definición         | Definidas entre corchetes [ ] y separadas por comas. | Definidos entre llaves { } y separados por comas. | Utiliza la biblioteca NumPy, definido como np.array(). | Definidos entre llaves { } con pares clave:valor separados por comas. | Definidas entre paréntesis ( ) y separadas por comas. |
+| Orden             | Mantienen el orden de inserción de los elementos. | No mantienen un orden específico. | Mantienen el orden de inserción de los elementos. | No mantienen un orden específico. | Mantienen el orden de inserción de los elementos. |
+| Duplicados         | Permite elementos duplicados. | No permite elementos duplicados. | Permite elementos duplicados. | Las claves son únicas, no permite claves duplicadas. | Permite elementos duplicados. |
+| Mutabilidad        | Son mutables, se pueden modificar sus elementos. | Son mutables, se pueden agregar y eliminar elementos. | Los arrays NumPy son mutables, pero su tamaño no se puede cambiar después de la creación. | Son mutables, se pueden agregar, modificar y eliminar pares clave-valor. | Son inmutables, una vez creadas no pueden modificarse. |
+| Indexación         | Se accede a los elementos mediante su índice numérico. | No permite la indexación, ya que no tiene un orden específico. | Se accede a los elementos mediante su índice numérico. | Se accede a los valores mediante sus claves. | Se accede a los elementos mediante su índice numérico. |
+| Uso de memoria     | Requiere más memoria debido a su flexibilidad con diferentes tipos de datos. | Requiere menos memoria debido a que solo almacena elementos únicos. | Requiere menos memoria que las listas estándar, especialmente con grandes conjuntos de datos. | Requiere más memoria que las listas debido al almacenamiento de claves y valores. | Requiere menos memoria debido a su naturaleza inmutable. |
+| Utilidad          | Utilizadas para almacenar y manipular colecciones de elementos. | Utilizados para asegurar que no haya duplicados en un conjunto de elementos. | Utilizados para realizar operaciones numéricas eficientes en grandes conjuntos de datos homogéneos. | Utilizados para almacenar datos asociados con claves únicas para una búsqueda eficiente. | Utilizadas para crear estructuras inmutables y para asegurar que los datos no cambien. |
