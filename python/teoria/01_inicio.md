@@ -5,7 +5,22 @@ license: "Creative Commons Attribution-NonCommercial 4.0 International"
 
 # Python
 
-[Python](#python)
+1. [Python](#python)
+   1. [¿Qué es Python?](#qué-es-python)
+   2. [¿Es el lenguaje más usado?](#es-el-lenguaje-más-usado)
+   3. [Historia de Python](#historia-de-python)
+   4. [Ventajas y desventajas](#ventajas-y-desventajas)
+      1. [Ventajas](#ventajas)
+      2. [Desventajas](#desventajas)
+   5. [Casos de éxito](#casos-de-éxito)
+   6. [Comparación con otros lenguajes](#comparación-con-otros-lenguajes)
+   7. [Recursos de aprendizaje](#recursos-de-aprendizaje)
+   8. [Comunidad y contribuciones](#comunidad-y-contribuciones)
+   9. [Frameworks y librerías](#frameworks-y-librerías)
+   10. [Buenas prácticas](#buenas-prácticas)
+   11. [Curiosidades](#curiosidades)
+   12. [Usos y aplicaciones](#usos-y-aplicaciones)
+
 
 ## ¿Qué es Python?
 
