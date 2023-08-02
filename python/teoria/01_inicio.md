@@ -106,3 +106,4 @@ Python se utiliza en una amplia variedad de áreas y aplicaciones, entre ellas:
 - Inteligencia artificial y aprendizaje automático: Python se ha convertido en una opción popular para desarrollar modelos de inteligencia artificial y machine learning, gracias a librerías como TensorFlow y PyTorch.
 - Automatización: Python es ideal para tareas de automatización y scripting debido a su simplicidad y facilidad de uso.
 - Aplicaciones de escritorio: Utilizando herramientas como Tkinter y PyQt, es posible desarrollar aplicaciones de escritorio con una interfaz gráfica.
+
