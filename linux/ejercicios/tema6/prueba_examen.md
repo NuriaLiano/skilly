@@ -110,5 +110,3 @@
     echo "Los argumentos introducidos son: $@"
 
 ~~~
-
-
