@@ -8,5 +8,5 @@
     "GH_PROJECT_URL": "https://api.github.com/repos/username/gitrepos",
     "GH_REPO_URL": "https://github.com/username/gitrepos",
     "DEFAULT_BRANCH": "master",
-    "README_PATH": "your_path\\gitlab\\gitrepos/README.md"
+    "README_PATH": "your_path\\gitlab\\gitrepos\\README.md"
 }
