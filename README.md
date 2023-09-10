@@ -36,8 +36,53 @@ Ex: my container configuration
 
 ### 3. Install all requirements
 
-- Python 2.5 `pip -r requirements.txt`
-- Python 3 `pip3 -r requirements.txt`
+- Python 2.5 `pip install -r requirements.txt`
+- Python 3 `pip3 install -r requirements.txt`
+
+### 4. :exclamation: Important steps :exclamation: Edit the container.config.json file and change the file name to '.config.json'
+
+This file contains all necessary global variables for execute the script. You must change all values for your own data.
+
+Ex:
+
+~~~json
+{
+    "EMAIL": "nuria@email.com",
+    "GH_USERNAME": "nuria",
+    "GL_USERNAME": "nuria",
+    "GH_TOKEN": "ghsdfsdgssdhPewghrBOnhgfdhdfX",
+    "GL_TOKEN": "ghsdfsdgssdhPewghrBOnhgfdhdfX",
+    "GH_URL": "https://api.github.com/nuria/repos",
+    "GH_URL_GENERAL": "https://github.com/",
+    "GL_URL": "https://gitlab.com",
+    "GH_URL_REMOVE": "https://api.github.com/repos/"
+}
+~~~
+
+When you finish edit It is important rename the file to '.config.json' and move to your container git directory
+
+### 5. :exclamation: Important steps :exclamation: Edit the local.config.json file and change the file name to '.config.json'
+
+This file contains all necessary local repo variables for execute the script. You must change all values for your own data.
+
+Ex:
+
+~~~json
+{
+    "LOCAL_PATH": "C:\\Users\\nuria\\gitlab\\gitrepos",
+    "LOCAL_PATH_CONFIG": "C:\\Users\\nuria\\gitlab\\gitrepos\\.config.json",
+    "GL_VISIBILITY": "public",
+    "GL_ID_REPO": 8937492,
+    "GL_REPO_URL": "https://gitlab.com/Nuria_Liano/gitrepos.git",
+    "GH_VISIBILITY": "public",
+    "GH_PROJECT_URL": "https://api.github.com/repos/Nuria_Liano/gitrepos",
+    "GH_REPO_URL": "https://github.com/Nuria_Liano/gitrepos",
+    "DEFAULT_BRANCH": "master",
+    "README_PATH": "C:\\Users\\nuria\\gitlab\\gitrepos\\README.md"
+}
+~~~
+
+When you finish edit It is important rename the file to '.config.json'. Keep it in repo
 
 ### 4. Execute script
 
@@ -177,6 +222,12 @@ The `set_up_gitlab_github_mirror` function is responsible for setting up a mirro
 ## Errors and suggestions
 
 If you find a problem with the code or have implemented an improvement please open an issue.
+
+## TODOs
+
+TODO: generate .gitingore for ignore .config.json
+TODO: add to README how add gitPushMirror.sh to $PATH on Windows and Linux
+TODO: gitPushBot: script that checks for changes in the repo every X minutes and execute gitPushMirror.sh automatically.
 
 ## License
 
