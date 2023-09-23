@@ -4,7 +4,7 @@
 
 (3 puntos)
 
-Crear un script  que nos diga que  abono transporte  nos corresponde  teniendo en cuenta  la edad que tenemos. Para ello, le proporcionaremos la edad como parámetro y automáticamente mostrará un mensaje indicando el tipo de abono que nos corresponde. Existen los siguientes abonos:
+Crear un script  que nos diga que  abono transporte  nos corresponde  teniendo en cuenta la edad que tenemos. Para ello, le proporcionaremos la edad como parámetro y automáticamente mostrará un mensaje indicando el tipo de abono que nos corresponde. Existen los siguientes abonos:
 
 - **Exentos de pago** los menores de 6 años
 - **Tarifa infantil** para los niños con edades comprendidas entre los 7 y 14 años.

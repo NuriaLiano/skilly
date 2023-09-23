@@ -40,3 +40,7 @@ code
 > :gift_heart: **CONSEJO**
 >
 > :soon: **EN EL HORNO**
+>
+> :star: **CURIOSIDAD**
+>
+> :black_nib: **CITA**
