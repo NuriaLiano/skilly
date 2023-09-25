@@ -1,3 +1,7 @@
+# Primeros pasos en Java
+
+
+
 ## verbosidad, hay qe escribir mucho
 
 ## que conlleva hacer un hola mundo?
@@ -18,3 +22,5 @@
 ### clases y objetos
 
 ### herencia
+
+### gestion memoria garbage colletion
