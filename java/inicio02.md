@@ -61,17 +61,27 @@ wget https://www.oracle.com/java/technologies/downloads/
 > :warning: Es necesario tener permisos de administrador
 
 1. Extraer el .tar.gz
-
-### MacOS
-
-[Manual oficial de Oracle]()
-
-#### Descargar JDK
-
-#### Instalar JDK.exe
+   ``tar zxvf jdk-20_linux-x64_bin.tar.gz``
 
 ### Elección de un IDE o editor de código
 
-## gestion de memoria
+La elección de un IDE o un editor de código es un punto muy importante por que es lo que vas a ver y utilizar todos los días durante varias horas.
 
-## sistema de construccion de proyecto, maven, gradel
+**IDE** (Entorno de desarrollo integrado): Ofrecen un conjunto completo de herramientas de desarrollo, editores de código, depuradores, generadores de interfaz gráfica, refactorización, etc. Están diseñados para abordar todas las necesidades en el mismo entorno.
+
+- Desventajas: al tener tantos complementos para aumentar tu productividad y que no tengas que hacer tareas fuera del entorno tienen una curva de aprendizaje algo pronunciada, no quiere decir que sean complicados si no que tienes que decicarle unos minutos de más a hacerte con el entorno.
+
+IDEs para Java:
+
+- [Intellij IDEA](https://www.jetbrains.com/idea/)
+- [Eclipse](https://www.eclipse.org/downloads/)
+- [Netbeans](https://netbeans.apache.org/)
+
+**Editor de código**: Son más simples y ligeros, ideales para proyectos más pequeños o para desarrolladores que prefieran una experiencia de uso más simple. Aun que de base no tengan todas las acciones que necesites puedes instalar plugins para completar la experiencia. La curva de aprendizaje es mucho más suave.
+
+- Desventajas: Siempre tendrás que estás pendiente del mejor plugin para tu entorno y puede pasar que no encuentres un plugin para tu caso concreto.
+
+Editores de código:
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Sublime Text](https://www.sublimetext.com/)
