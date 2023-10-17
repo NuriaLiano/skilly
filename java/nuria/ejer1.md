@@ -119,9 +119,52 @@ public class Vector2D {
 
     public static void main(String[] args) {
         // Ejemplo de uso y prueba de la clase Vector2D
-        Vector2D vector1 = new Vector2D(3.0, 4.0);
-        Vector2D vector2 = new Vector2D(1.0, 2.0);
+        // Vector2D vector1 = new Vector2D(3.0, 4.0);
+        // Vector2D vector2 = new Vector2D(1.0, 2.0);
 
+        // System.out.println("Vector 1: " + vector1);
+        // System.out.println("Vector 2: " + vector2);
+
+        // Vector2D suma = vector1.suma(vector2);
+        // System.out.println("Suma: " + suma);
+
+        // Vector2D resta = vector1.resta(vector2);
+        // System.out.println("Resta: " + resta);
+
+        // double productoEscalar = vector1.productoEscalar(vector2);
+        // System.out.println("Producto Escalar: " + productoEscalar);
+
+        // double modulo = vector1.modulo();
+        // System.out.println("Módulo de Vector 1: " + modulo);
+
+        // try {
+        //     double angulo = vector1.angulo(vector2);
+        //     System.out.println("Ángulo entre Vector 1 y Vector 2 (en radianes): " + angulo);
+        // } catch (ArithmeticException e) {
+        //     System.out.println(e.getMessage());
+        // }
+        // Lee los componentes del primer vector
+        System.out.print("Ingrese la componente x del primer vector: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("Ingrese la componente y del primer vector: ");
+        double y1 = scanner.nextDouble();
+
+        // Crea el primer vector
+        Vector2D vector1 = new Vector2D(x1, y1);
+
+        // Repite el proceso para el segundo vector
+        System.out.print("Ingrese la componente x del segundo vector: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("Ingrese la componente y del segundo vector: ");
+        double y2 = scanner.nextDouble();
+
+        // Crea el segundo vector
+        Vector2D vector2 = new Vector2D(x2, y2);
+
+        // Cierra el scanner cuando ya no lo necesites
+        scanner.close();
+
+        // Ahora puedes realizar las operaciones con los vectores
         System.out.println("Vector 1: " + vector1);
         System.out.println("Vector 2: " + vector2);
 
@@ -141,8 +184,7 @@ public class Vector2D {
             double angulo = vector1.angulo(vector2);
             System.out.println("Ángulo entre Vector 1 y Vector 2 (en radianes): " + angulo);
         } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-        }
+            System.out.println(e.getMes
     }
 }
 
