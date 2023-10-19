@@ -1,23 +1,13 @@
 
 # ![logo_skilly](img/logo_skilly.png)
 
-<div style="display: flex; justify-content: center;">
+<center style="display: flex; justify-content: center;">
     <h1>Academia online de informática</h1>
-</div>
-<div style="display: flex; justify-content: center; color: #7AC943;">
+</center>
+<center style="display: flex; justify-content: center; color: #7AC943;">
     <h2 style="margin-right: 20px;"><a style="color:#7AC943;" href="https://www.skilly.es">skilly.es</a></h2>
     <h2><a style="color:#7AC943;" href="mailto:hola@skilly.es">hola@skilly.es</a></h2>
-</div>
-
-## Indice
-
-1. [](#)
-   1. [Indice](#indice)
-   2. [Qué es Skilly](#qué-es-skilly)
-      1. [Cómo son las clases](#cómo-son-las-clases)
-   3. [Que hay en el repo?](#que-hay-en-el-repo)
-   4. [Puedo usar el contenido?](#puedo-usar-el-contenido)
-   5. [Contacto](#contacto)
+</center>
 
 ## Qué es Skilly
 
@@ -72,7 +62,7 @@ Esta licencia permite a otros compartir y adaptar el contenido, pero siempre rec
 
 Si tienes alguna pregunta, duda con los ejercicios, deseas conocer más sobre Skilly o estás interesado en contratar una clase con nuestros profesionales expertos, no dudes en ponerte en contacto con nosotros.
 
-<div style="display: flex; justify-content: center; color: #7AC943;">
+<center style="display: flex; justify-content: center; color: #7AC943;">
     <h2 style="margin-right: 20px;"><a style="color:#7AC943;" href="https://www.skilly.es">skilly.es</a></h2>
     <h2><a style="color:#7AC943;" href="mailto:hola@skilly.es">hola@skilly.es</a></h2>
-</div>
+</center>
