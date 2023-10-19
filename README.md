@@ -19,7 +19,7 @@ Y no sólo nos dirigimos a estudiantes: los profesores que quieran ampliar sus c
 
 En Skilly, creemos en el potencial ilimitado de cada persona y trabajamos para desbloquear las oportunidades de crecimiento para todos.
 
-Si prefieres ver el contenido desde la plataforma puedes seguir este link cambiando al final por el nombre de la técnologia que quieras ver: [www.skilly.gitbook.io/mysql](www.skilly.gitbook.io)
+Si prefieres ver el contenido desde la plataforma puedes seguir este link: [www.skilly.gitbook.io](www.skilly.gitbook.io)
 
 ### Cómo son las clases
 
