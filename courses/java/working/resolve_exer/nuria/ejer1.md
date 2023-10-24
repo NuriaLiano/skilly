@@ -78,7 +78,8 @@ public class Vector2D {
 
     // Método para calcular el módulo (magnitud) del vector
     public double modulo() {
-        return Math.sqrt(x * x + y * y);
+        // return Math.sqrt(x * x + y * y);
+        return Math.sqrt(Math.pow(this.x,2)+Math.pow(this.y,2)); //es el metodo de su compi
     }
 
     // Método para calcular el ángulo entre dos vectores en radianes
@@ -94,6 +95,7 @@ public class Vector2D {
         // Cálculo del ángulo en radianes
         double cosTheta = productoEscalar / moduloProducto;
         return Math.acos(cosTheta);
+        return Math.toDegrees(Math.acos(producto_excalar/modulo));
     }
 
     // Representación como cadena de caracteres
@@ -168,23 +170,20 @@ public class Vector2D {
         System.out.println("Vector 1: " + vector1);
         System.out.println("Vector 2: " + vector2);
 
-        Vector2D suma = vector1.suma(vector2);
-        System.out.println("Suma: " + suma);
+        
+        System.out.println("Suma: " + vector1.suma(vector2));
 
-        Vector2D resta = vector1.resta(vector2);
-        System.out.println("Resta: " + resta);
+        System.out.println("Resta: " + vector1.resta(vector2));
 
-        double productoEscalar = vector1.productoEscalar(vector2);
-        System.out.println("Producto Escalar: " + productoEscalar);
+        System.out.println("Producto Escalar: " + vector1.productoEscalar(vector2));
 
-        double modulo = vector1.modulo();
-        System.out.println("Módulo de Vector 1: " + modulo);
+        System.out.println("Módulo de Vector 1: " + vector2.modulo());
 
         try {
             double angulo = vector1.angulo(vector2);
             System.out.println("Ángulo entre Vector 1 y Vector 2 (en radianes): " + angulo);
         } catch (ArithmeticException e) {
-            System.out.println(e.getMes
+            System.out.println(e.getMessage());
     }
 }
 
