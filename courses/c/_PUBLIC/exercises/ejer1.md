@@ -1,6 +1,6 @@
-# Ejercicio 1 - Variables, constantes
+# Ejercicio 1 - Cálculo del Área de un Círculo (Variables, constantes)
 
-## Enunciado - Cálculo del Área de un Círculo
+## Enunciado
 
 Escribe un programa en C que calcule el área de un círculo. El programa debe solicitar al usuario que ingrese el radio del círculo y luego calcular y mostrar el área correspondiente.
 

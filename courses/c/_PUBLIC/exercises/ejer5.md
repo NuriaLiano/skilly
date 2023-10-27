@@ -1,6 +1,6 @@
-# Ejercicio 5 - Variables, constantes e IFs anidados
+# Ejercicio 5 - Año bisiesto (Variables, constantes e IFs anidados)
 
-## Enunciado - Año bisiesto
+## Enunciado
 
 Escribe un programa en C que determine si un año dado es un año bisiesto o no. Un año bisiesto es aquel que es divisible por 4, excepto aquellos que son divisibles por 100 pero no por 400. El programa debe solicitar al usuario que ingrese un año y luego mostrar si ese año es bisiesto o no.
 

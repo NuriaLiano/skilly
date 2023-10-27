@@ -1,6 +1,6 @@
-# Ejercicio 3 - Variables, constantes e IFs
+# Ejercicio 3 - Calculadora simple (Variables, constantes e IFs)
 
-## Enunciado - Calculadora simple
+## Enunciado
 
 Escribe un programa en C que actúe como una calculadora simple. El programa debe realizar cuatro operaciones básicas: suma, resta, multiplicación y división. Debe mostrar un menú de opciones al usuario, permitirle seleccionar una operación y luego solicitar dos números para realizar la operación seleccionada. A continuación, muestra el resultado de la operación o un mensaje de error si es aplicable.
 

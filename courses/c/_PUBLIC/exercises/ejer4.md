@@ -1,6 +1,6 @@
-# Ejercicio 4 - Variables, constantes e IFs anidados
+# Ejercicio 4 - Calculadora un poco mejorada :smile: (Variables, constantes e IFs anidados)
 
-## Enunciado - Calculadora un poco mejorada :smile:
+## Enunciado
 
 En este ejercicio vamos a repasar el [ejercicio 2](ejer2.md) y vamos a agregar dos nuevas condiciones para validar los números que introduce el usuario:
 

@@ -1,6 +1,6 @@
-# Ejercicio 2 - Variables, constantes e IFs
+# Ejercicio 2 - Calculadora de descuentos (Variables, constantes e IFs)
 
-## Enunciado - Calculadora de descuentos
+## Enunciado
 
 Crear un programa en C que determine el precio final de un producto tras aplicarle un descuento. El programa pedirá al usuario el precio original del producto y, basándose en el rango de precio, aplicará un descuento determinado.
 
