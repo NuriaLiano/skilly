@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script >
+        window.onload = function(){
+            resaltar();
+        }
+        function addResponse() {
+            let nacionalidad = [];
+            nacionalidad = document.querySelector("#tSelNacion");
+            nacionalidad.addEventListener("change", _ => {
+                let value = nacionalidad.value;
+                window.localStorage.setItem("nacionalidades", JSON.stringify(value));
+            });
+        }
+        function resaltar(){
+            let comidas = localStorage.getItem("nacionalidades");
+            if(document.querySelector("#tSelNacion").value == comidas){
+                document.querySelector("#tSelNacion").selected = true;
+            }   
+        }
+    </script>
+</head>
+<body>
+    <header>¿Cuál es tu nacionalidad?</header>
+    <main>
+        <select id="tSelNacion" onclick="addResponse()">
+            <option value="española" name="nacionalidad" se>española</option>
+            <option value="argentina" name="nacionalidad">argentina</option>
+            <option value="marroqui" name="nacionalidad">marroqui</option>
+            <option value="inglesa" name="nacionalidad">inglesa</option>
+            <option value="ecuatoriana" name="nacionalidad">ecuatoriana</option>
+            <option value="argelina" name="nacionalidad">argelina</option>
+            <option value="francesa" name="nacionalidad">francesa</option>
+        </select>
+    </main>
+    <a href="/deportes.html">atrás</a>
+    <a href="/pokemon.html">siguiente</a>
+</body>
+</html>

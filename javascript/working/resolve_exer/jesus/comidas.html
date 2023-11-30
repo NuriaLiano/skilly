@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            resaltar();
+        }
+
+        function addResponse() {
+            let comidasGuardadas = [];
+            let comidas = [];
+            comidas = document.querySelectorAll("input[name='comida']:checked");
+            comidas.forEach(comidasSeleccionadas => {
+                comidasGuardadas.push(comidasSeleccionadas.value);
+            });
+            window.localStorage.setItem("comidasSeleccionadas", JSON.stringify(comidasGuardadas));
+        }
+
+        function resaltar(){
+            let comidas = localStorage.getItem("comidasSeleccionadas");
+            comidas = JSON.parse(comidas);
+            let arraycheckbox = document.querySelectorAll("input[name='comida']");
+
+            console.log(comidas)
+            console.log(arraycheckbox)
+
+            arraycheckbox.forEach(checkbox => {
+                let valueComida = checkbox.value;
+                if(comidas.includes(valueComida)) {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false;
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>Comidas favoritas</header>
+    <form>
+        <input type="checkbox" name="comida" value="china">china</input>
+        <input type="checkbox" name="comida" value="india">india</input>
+        <input type="checkbox" name="comida" value="tex-mex">tex-mex</input>
+        <input type="checkbox" name="comida" value="española">española</input>
+        <input type="checkbox" name="comida" value="italiana">italiana</input>
+        <button type="button" onclick="addResponse()">Guardar</button>
+    </form>
+    <a href="/deportes.html">siguiente</a>
+</body>
+</html>
