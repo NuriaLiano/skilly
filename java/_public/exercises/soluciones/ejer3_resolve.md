@@ -1,4 +1,4 @@
-# Ejercicio Resuelto: Sistema de Gestión de Empleados
+# Solución de Sistema de Gestión de Empleados
 
 ## Interfaz Bonificable
 
