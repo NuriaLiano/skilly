@@ -1,4 +1,4 @@
-# Ejercicio Aplicación de Notas Simples
+# Ejercicio Cálculadora básica
 
 Objetivo: Crear una aplicación de calculadora en Java Swing que permita al usuario realizar operaciones aritméticas básicas.
 
