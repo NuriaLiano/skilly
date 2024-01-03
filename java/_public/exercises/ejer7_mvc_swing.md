@@ -11,11 +11,13 @@ Pasos para el Desarrollo
 - Utiliza JFrame como el contenedor principal.
 - Añade un JTextField para mostrar las operaciones y resultados.
 - Crea botones para los números y operaciones.
+
 **Manejo de Eventos:**
 
 - Añade ActionListeners a cada botón.
 - Implementa la lógica para actualizar el JTextField cuando se presionan los botones.
 - Añade la lógica para realizar cálculos cuando se presiona el botón de igual (=).
+
 **Implementación de la Lógica de la Calculadora:**
 
 - Almacena la entrada del usuario y realiza las operaciones aritméticas.
