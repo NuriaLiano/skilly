@@ -21,6 +21,8 @@ code
 >
 > :warning: **ADVERTENCIA**
 >
+> :sparkles: **IMPORTANTE**
+>
 > :no_entry: **PROHIBIDO**
 >
 > :pencil: **NOTA**
