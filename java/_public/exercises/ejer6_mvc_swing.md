@@ -11,7 +11,7 @@ La aplicación tendrá una interfaz simple que consta de un área de texto para 
 
 ### Modelo (NotaModelo)
 
-Almacena la nota actual
+Almacena la nota actual.
 Tiene métodos para establecer y obtener el texto de la nota.
 
 ### Vista (NotaVista)
