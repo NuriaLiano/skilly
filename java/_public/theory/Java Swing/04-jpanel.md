@@ -1,6 +1,6 @@
 # JPanel explicado
 
-## ¿Qué es el JFrame?
+## ¿Qué es el JPanel?
 
 Es una clase fundamental en Java Swing, utilizada como un contenedor genérico ligero para agrupar otros componentes de la interfaz de usuario. En una aplicación Swing, JPanel sirve como un elemento esencial para organizar componentes y construir interfaces de usuario complejas.
 

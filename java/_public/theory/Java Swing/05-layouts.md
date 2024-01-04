@@ -40,7 +40,7 @@ public class FlowLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de flowlayout](image.png)
+![ejemplo grafico de flowlayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/flowlayout.png?ref_type=heads)
 
 ### BorderLayout
 
@@ -70,7 +70,7 @@ public class BorderLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de borderlayout](image-1.png)
+![ejemplo grafico de borderlayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/border.png?ref_type=heads)
 
 ### GridLayout
 
@@ -100,7 +100,7 @@ public class GridLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de gridlayout](image-2.png)
+![ejemplo grafico de gridlayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/grid.png?ref_type=heads)
 
 ### BoxLayout
 
@@ -129,7 +129,7 @@ public class BoxLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de boxlayout](image-3.png)
+![ejemplo grafico de boxlayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/boxlayout.png?ref_type=heads)
 
 ### CardLayout
 
@@ -165,7 +165,7 @@ public class CardLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de cardlayout](image-4.png)
+![ejemplo grafico de cardlayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/cardlayout.png?ref_type=heads)
 
 ### GridBagLayout
 
@@ -205,7 +205,7 @@ public class GridBagLayoutExample {
 }
 ~~~
 
-![ejemplo grafico de gridbaglayout](image-5.png)
+![ejemplo grafico de gridbaglayout](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/gridbag.png?ref_type=heads)
 
 ### Consejos para usar Layouts Managers
 

@@ -24,8 +24,6 @@ public class EjemploJApplet extends JApplet {
 }
 ~~~
 
-![Alt text](image-1.png)
-
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JApplet]()
 
@@ -49,7 +47,7 @@ public class EjemploJDialog {
 }
 ~~~
 
-![Alt text](image-3.png)
+![imagen jdialog](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jdialog.png?ref_type=heads)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JDialog]()
@@ -74,7 +72,7 @@ public class EjemploJFrame {
 }
 ~~~
 
-![Alt text](image-4.png)
+![imagen jframe](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jframe.png?ref_type=heads)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JFrame]()
@@ -98,7 +96,7 @@ public class EjemploJWindow {
 }
 ~~~
 
-![Alt text](image.png)
+![imagen jwindow](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jwindow.png?ref_type=heads)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JWindow]()

@@ -1,6 +1,6 @@
 # JFrame explicado
 
-## ¿Qué es el JFrame?
+## ¿Qué es el JFrame ?
 
 Es una clase fundamental en Java Swing, utilizada para crear la ventana principal de una aplicación de interfaz gráfica de usuario (GUI). Es un contenedor de nivel superior que proporciona un marco para la ventana, con características estándar que esperarías en cualquier ventana de aplicación, como la barra de título, los botones de minimizar/maximizar/cerrar, y la capacidad de cambiar de tamaño.
 
