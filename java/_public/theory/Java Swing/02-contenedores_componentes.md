@@ -47,7 +47,7 @@ public class EjemploJDialog {
 }
 ~~~
 
-![imagen jdialog](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jdialog.png?ref_type=heads)
+![imagen jdialog](https://gitlab.com/Nuria_Liano/skilly/-/raw/master/img/jdialog.png)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JDialog]()
@@ -72,7 +72,7 @@ public class EjemploJFrame {
 }
 ~~~
 
-![imagen jframe](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jframe.png?ref_type=heads)
+![imagen jframe](https://gitlab.com/Nuria_Liano/skilly/-/raw/master/img/jframe.png)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JFrame]()
@@ -96,7 +96,7 @@ public class EjemploJWindow {
 }
 ~~~
 
-![imagen jwindow](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/jwindow.png?ref_type=heads)
+![imagen jwindow](https://gitlab.com/Nuria_Liano/skilly/-/raw/master/img/jwindow.png)
 
 > :books: **PARA SABER MÁS**
 > [Ir a la sección JWindow]()
