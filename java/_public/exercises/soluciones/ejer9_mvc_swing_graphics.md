@@ -1,4 +1,4 @@
-# [Solución] Ejercicio: 
+# [Solución] Ejercicio: Dibujo de figuras con Graphics
 
 ## Modelo: Rectangulo
 
