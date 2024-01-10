@@ -164,7 +164,7 @@ public class RectanguloVista extends JFrame{
 }
 ~~~
 
-# Controlador: RectanguloControlador
+## Controlador: RectanguloControlador
 
 ~~~java
 import java.awt.Color;
