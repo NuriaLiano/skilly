@@ -1,4 +1,4 @@
-# Ejercicio: Dibujo de figuras con Graphics
+# [Solución] Ejercicio: Dibujo de figuras con Graphics
 
 ## Modelo: Circulo
 
