@@ -83,9 +83,8 @@ public class RectanguloColorControlador {
         // Controladores para los sliders
         ChangeListener changeListener = new ChangeListener() {
             public void stateChanged(ChangeEvent e) {
-                model.setRojo(vista.getSliderRed().getValue());
-                model.setVerde(vista.getSliderGreen().getValue());
-                model.setAzul(vista.getSliderBlue().getValue());
+
+                model.setColor(vista.getSliderRed().getValue(), vista.getSliderGreen().getValue(), vista.getSliderBlue().getValue())
                 vista.gettextoRojo().setText(String.valueOf(model.getRojo()));
                 vista.getTextoVerde().setText(String.valueOf(model.getVerde()));
                 vista.getTextoAzul().setText(String.valueOf(model.getAzul()));

@@ -52,6 +52,15 @@ public class RectanguloColorModelo {
     public Color getColor() {
         return new Color(rojo, verde, azul);
     }
+    public int getRojo(){
+        return rojo;
+    }
+    public int getVerde(){
+        return verde;
+    }
+    public int getAzul(){
+        return azul;
+    }
 }
 ~~~
 
