@@ -50,7 +50,7 @@ public class RectanguloColorModelo {
     }
 
     public Color getColor() {
-        return new Color(red, green, blue);
+        return new Color(rojo, verde, azul);
     }
 }
 ~~~
@@ -69,4 +69,4 @@ public class RectangleColorApp {
 
 ## Resultado final
 
-![imagen final del ejercicio](https://gitlab.com/Nuria_Liano/skilly/-/raw/899f93f020116a8ea182c5a9bea613fa8638a3da/img/imagenfinal.png)
+![imagen final del ejercicio](https://gitlab.com/Nuria_Liano/skilly/-/blob/master/img/imagenfinal.png?ref_type=heads)
