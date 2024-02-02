@@ -4,4 +4,4 @@ public class RandomCircles {
     CircleView vista = new CircleView(model);
     new CircleController(model, vista);
     vista.setVisible(true);
-    }}
+}}
