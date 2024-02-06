@@ -119,8 +119,9 @@ def get_gitlab_id_repo(instance, repo_name, local_path_config):
         print(Fore.RED + f'[ERROR] Gitlab API error: {e}')
 
 def set_visibility():
-    visibility_prompt = input(Fore.CYAN +'Enter the repo visibility: (public/private)').lower()
     print(Fore.MAGENTA + f'[WARNING] press enter to set the repo visibility to "public"')
+    visibility_prompt = input(Fore.CYAN +'Enter the repo visibility: (public/private)').lower()
+    
 
     if visibility_prompt == "" or visibility_prompt == "public" or visibility_prompt == "pub":
         return 'public'
