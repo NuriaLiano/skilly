@@ -1,4 +1,4 @@
-package cris.sincro;
+package java.working.resolve_exer.juan_calle.psp;
 
 public class Cola {
 
