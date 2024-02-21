@@ -8,7 +8,7 @@ Desarrollar un sistema de gestión de pedidos para un servicio de entrega a domi
 
 ~~~sql
 -- Creación de la base de datos
-CREATE DATABASE delivery_service CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE delivery_service;
 
 -- Selección de la base de datos
 USE delivery_service;
