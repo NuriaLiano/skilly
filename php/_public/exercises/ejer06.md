@@ -25,8 +25,8 @@ CREATE TABLE orders (
 
 -- Insertar datos
 INSERT INTO orders (customer_name, address, order_details, status) VALUES
-('Alex Doe', '1234 Main St, Anytown', 'Pizza Margherita, Coca Cola', 'preparing'),
-('Jane Smith', '5678 Market St, Anycity', 'Veggie Burger, Fries', 'on the way');
+('Alex Cillo', '1234 Calle TeVeoOtraVez', 'Pizza Campesina, Coca Cola', 'preparando'),
+('Jana Cana', '5678 Calle El Bizcocho', 'Veggie Burger, Patatas', 'en camino');
 
 ~~~
 
