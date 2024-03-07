@@ -91,9 +91,6 @@ exit
 
 ## Punto de control
 
-En este punto vamos a hacer un poco de reflexión para autocomprobar si hemos entendido los comandos que hemos visto.
-Responde a estas preguntas y revisa el resultado en la solución del ejercicio. [Ver solucion](Soluciones/ejer02.md)
-
 - ¿Cuál es la diferencia entre useradd y adduser?
 
 Respuesta:
