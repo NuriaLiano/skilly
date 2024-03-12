@@ -1,4 +1,4 @@
-# Copias de Seguridad con Clonezilla
+# [Solución] Copias de Seguridad con Clonezilla
 
 ## Introducción a Clonezilla
 

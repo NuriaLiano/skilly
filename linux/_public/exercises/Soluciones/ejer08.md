@@ -1,4 +1,4 @@
-# Monitorización del Sistema en Linux
+# [Solución] Monitorización del Sistema en Linux
 
 Este documento proporciona una visión general de las herramientas y técnicas básicas para la monitorización del sistema en Linux, incluyendo el directorio `/proc` y los archivos de registro.
 
