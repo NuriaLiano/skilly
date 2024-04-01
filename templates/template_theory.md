@@ -46,3 +46,5 @@ code
 > :star: **CURIOSIDAD**
 >
 > :black_nib: **CITA**
+>
+> :brain: **RECUERDA**

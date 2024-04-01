@@ -5,13 +5,11 @@
 - Usa variables para almacenar el peso (en kilogramos) y la altura (en metros) ingresados por el usuario.
 - Calcula el IMC usando la fórmula IMC = peso / (altura^2).
 - Usa un bucle para permitir al usuario repetir el cálculo con diferentes valores.
-- Ejemplo de paquete adicional: matplotlib para graficar el IMC en función de diferentes pesos.
 
 ## Conversor de Monedas
 
 - Solicita al usuario una cantidad de dinero y la moneda de origen y destino (por ejemplo, de USD a EUR).
 - Utiliza un bucle para realizar varias conversiones.
-- Integra un paquete como forex-python para obtener tasas de cambio actualizadas.
 
 ## Generador de Contraseñas
 
@@ -31,5 +29,3 @@
 - Solicita al usuario ingresar un texto.
 - Analiza el texto para contar el número de palabras, frases, y la frecuencia de cada letra.
 - Usa bucles para iterar a través del texto y un diccionario para llevar la cuenta de la frecuencia.
-- Ejemplo de paquete adicional: nltk para análisis de texto más avanzado
-
