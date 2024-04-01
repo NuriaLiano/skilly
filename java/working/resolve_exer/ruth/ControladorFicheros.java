@@ -1,4 +1,4 @@
-package ruth;
+package java.working.resolve_exer.ruth;
 /*
  * 
  * ¿CALCULAR MASA?
