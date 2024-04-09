@@ -3,7 +3,6 @@
 * [Ejercicio de Programación PHP: Sistema de Consulta del Clima con Favoritos](README.md)
 * [Ejercicio con objetos, sesiones, conexión a base de datos, consultas y subconsultas](ejer01.md)
 * [Ejercicio de bases de datos en PHP](ejer02.md)
-* [ejer03](ejer03.md)
 * [Ejercicio POO. Sistema de gestión de Podcast](ejer04.md)
 * [Ejercicio POO y formularios. Registro de usuarios](ejer05.md)
 * [Sistema de Gestión de Pedidos para Servicio de Entrega a Domicilio](ejer06.md)
