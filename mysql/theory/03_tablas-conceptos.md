@@ -3,7 +3,7 @@ author: '@nurialiano'
 license: Creative Commons Attribution-NonCommercial 4.0 International
 ---
 
-# Tablas
+# Conceptos sobre las tablas
 
 Una tabla es una estructura de datos que se utiliza para almacenar información en filas y columnas. Cada fila representa una entrada individual en la tabla, mientras que cada columna representa un atributo específico de esa entrada. Las tablas son la base de la mayoría de las bases de datos relacionales, lo que significa que se establecen relaciones entre ellas a través de claves y referencias cruzadas.
 
