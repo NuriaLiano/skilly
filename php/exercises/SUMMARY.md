@@ -1,0 +1,16 @@
+# Table of contents
+
+* [Ejercicio de Programación PHP: Sistema de Consulta del Clima con Favoritos](README.md)
+* [Ejercicio con objetos, sesiones, conexión a base de datos, consultas y subconsultas](ejer01.md)
+* [Ejercicio de bases de datos en PHP](ejer02.md)
+* [Ejercicio POO. Sistema de gestión de Podcast](ejer04.md)
+* [Ejercicio POO y formularios. Registro de usuarios](ejer05.md)
+* [Sistema de Gestión de Pedidos para Servicio de Entrega a Domicilio](ejer06.md)
+* [Soluciones](soluciones/README.md)
+  * [\[Solución\] Ejercicio de Programación PHP: Sistema de Consulta del Clima con Favoritos](Soluciones/api\_cookies\_sessiones\_solucion.md)
+  * [\[Solución\] Ejercicio POO. Sistema de gestión de Podcast](soluciones/ejer04\_solucion.md)
+  * [\[Solución\] Ejercicio con objetos, sesiones, conexión a base de datos, consultas y subconsultas](soluciones/ejer01\_solucion.md)
+  * [\[Solución\] Ejercicio de bases de datos en PHP](soluciones/ejer02\_soluciones.md)
+  * [\[Solución\] Ejercicio de registro de usuarios con sesiones y cookies](soluciones/ejer03\_soluciones.md)
+  * [\[Solución\] Ejercicio POO y formularios. Registro de usuarios](soluciones/ejer05\_solucion.md)
+  * [\[Solución\] Sistema de Gestión de Pedidos para Servicio de Entrega a Domicilio](soluciones/ejer06\_solucion.md)

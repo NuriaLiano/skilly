@@ -48,3 +48,5 @@ code
 > :black_nib: **CITA**
 >
 > :brain: **RECUERDA**
+>
+> :mag_right: **INVESTIGA**

@@ -1,4 +1,4 @@
-# Copias de Seguridad Básicas en Linux
+# Copias de seguridad básicas en linux
 
 Este documento describe métodos básicos para realizar copias de seguridad en sistemas Linux utilizando comandos de terminal. Cubriremos el uso de `rsync`, `tar` y `cp`.
 

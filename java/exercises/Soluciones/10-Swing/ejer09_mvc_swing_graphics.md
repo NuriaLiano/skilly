@@ -114,6 +114,7 @@ public class RectanguloVista extends JFrame{
                 GradientPaint gp = new GradientPaint((centroX - ancho/2),(centroY - alto /2),  modelo.getColor1(),
                                                        (centroX - ancho/2),(centroY - alto /2),  modelo.getColor2());
                 //establecer color gradiente a rectangulo
+                
                 rectangulo.setPaint(gp);
                 rectangulo.fillRect((centroX - ancho/2),(centroY - alto /2), ancho, alto);
             }
