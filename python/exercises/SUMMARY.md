@@ -9,5 +9,4 @@
 * [Ejercicios repaso estructuras de control y bucles](ejer7.md)
 * [Soluciones](soluciones/README.md)
   * [Ejercicios sencillos Python](Soluciones/ejer1\_solucion.md)
-* [Soluciones](soluciones-1/README.md)
-  * [Soluciones a los ejercicios de repaso estructuras de control y bucles](Soluciones/ejer7.md)
+  * [Soluciones a los ejercicios de repaso estructuras de control y bucles](soluciones/ejer7.md)
