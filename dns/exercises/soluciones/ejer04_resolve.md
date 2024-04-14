@@ -1,4 +1,4 @@
-# [Solución] Entendiendo BIND9: configuración de subdominios
+# \[Solución] Entendiendo BIND9: configuración de subdominios
 
 ## Objetivo
 
@@ -6,56 +6,56 @@ El objetivo de este ejercicio es avanzar en tu habilidad configurando BIND9, apr
 
 ## Requisitos previos
 
-- Haber completado el ejercicio de [Entendiendo BIND9: Configuración de un cliente DNS](./ejer03.md)
-- Asegúrate de que el sistema esté actualizado y de que tienes permisos de administrador (root).
-- Tener acceso a un cliente Ubuntu para la verificación
+* Haber completado el ejercicio de [Entendiendo BIND9: Configuración de un cliente DNS](../Soluciones/ejer03.md)
+* Asegúrate de que el sistema esté actualizado y de que tienes permisos de administrador (root).
+* Tener acceso a un cliente Ubuntu para la verificación
 
 ## Pasos a seguir
 
 ### Configuración de subdominios en BIND9
 
-1. Asumiendo que ya tienes configurado el dominio "skilly.local", crearás un subdominio llamado "dev.skilly.local".
+1.  Asumiendo que ya tienes configurado el dominio "skilly.local", crearás un subdominio llamado "dev.skilly.local".
 
-    1.1 Edita ``named.conf.local`` para añadir el subdominio "dev.skilly.local"
+    1.1 Edita `named.conf.local` para añadir el subdominio "dev.skilly.local"
 
-    ~~~sh
+    ```sh
     sudo nano /etc/bind/named.conf.local
-    ~~~
+    ```
 
     1.2 Añade la siguiente zona para el subdominio
 
-    ~~~sh
+    ```sh
     zone "dev.skilly.local" {
         type master;
         file "/etc/bind/zones/db.dev.skilly.local";
     };
-    ~~~
+    ```
 
 ### Creación del archivo de zona para el subdominio
 
-2. Crea y configura un nuevo archivo de zona para "dev.skilly.local", siguiendo una estructura similar a la del dominio principal.
+2.  Crea y configura un nuevo archivo de zona para "dev.skilly.local", siguiendo una estructura similar a la del dominio principal.
 
     2.1 Primero, crea el directorio si no existe
 
-    ~~~sh
+    ```sh
     sudo mkdir -p /etc/bind/zones
-    ~~~
+    ```
 
     2.2 Copia un archivo de zona existente como base
 
-    ~~~sh
+    ```sh
     sudo cp /etc/bind/db.local /etc/bind/zones/db.dev.skilly.local
-    ~~~
+    ```
 
     2.3 Edita el nuevo archivo de zona
 
-    ~~~sh
+    ```sh
     sudo nano /etc/bind/zones/db.dev.skilly.local
-    ~~~
+    ```
 
     2.4 Configura los registros DNS para el subdominio, asegurándote de definir al menos el SOA, registros NS, y un registro A para el subdominio
 
-    ~~~sh
+    ```sh
     @       IN      SOA     ns.dev.skilly.local. admin.skilly.local. (
                              3         ; Serial
                         604800         ; Refresh
@@ -65,15 +65,15 @@ El objetivo de este ejercicio es avanzar en tu habilidad configurando BIND9, apr
     @       IN      NS      ns.dev.skilly.local.
     ns      IN      A       192.168.1.10
     www     IN      A       192.168.1.11
-    ~~~
+    ```
 
 ### Reiniciar el Servidor BIND9
 
 4. Reinicia BIND9 para aplicar los cambios y cargar la nueva configuración de zona.
 
-~~~sh
+```sh
 sudo systemctl restart bind9
-~~~
+```
 
 ### Configuración del Cliente Ubuntu
 
@@ -85,10 +85,9 @@ Si ya has configurado tu cliente Ubuntu en ejercicios anteriores para apuntar a 
 
 6. Desde tu cliente Ubuntu, verifica la resolución del subdominio
 
-~~~sh
+```sh
 dig @192.168.1.10 www.dev.skilly.local
 nslookup www.dev.skilly.local 192.168.1.10
-~~~
+```
 
-> :sparkles: **IMPORTANTE**
-> Asegúrate de reemplazar 192.168.1.10 con la dirección IP real de tu servidor DNS.
+> :sparkles: **IMPORTANTE** Asegúrate de reemplazar 192.168.1.10 con la dirección IP real de tu servidor DNS.
