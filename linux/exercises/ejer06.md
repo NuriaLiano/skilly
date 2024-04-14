@@ -8,8 +8,8 @@ Clonezilla es una herramienta de clonación y creación de imágenes de disco/pa
 
 Antes de iniciar, asegúrate de tener:
 
-- Un medio de arranque con Clonezilla (CD, USB, etc.).
-- Un disco o partición destino con suficiente espacio para almacenar la copia de seguridad.
+* Un medio de arranque con Clonezilla (CD, USB, etc.).
+* Un disco o partición destino con suficiente espacio para almacenar la copia de seguridad.
 
 ## 2. Arranque desde el medio de Clonezilla
 
@@ -37,10 +37,10 @@ Una vez completado, verifica que la imagen se ha creado correctamente y guárdal
 
 ## Punto de control
 
-Reflexiona y verifica lo siguiente [Ver solución](Soluciones/ejer06.md):
+Reflexiona y verifica lo siguiente [Ver solución](soluciones/ejer06.md):
 
-- ¿Has completado una copia de seguridad exitosa con Clonezilla?
-- ¿Puedes identificar y listar todos los discos y particiones en tu sistema?
-- ¿Comprendes cómo formatear y montar una nueva partición?
-- ¿Entiendes el propósito y la estructura del archivo fstab y cómo este afecta el proceso de arranque?
-- ¿Puedes asegurar que una partición nueva se monte automáticamente al inicio?
+* ¿Has completado una copia de seguridad exitosa con Clonezilla?
+* ¿Puedes identificar y listar todos los discos y particiones en tu sistema?
+* ¿Comprendes cómo formatear y montar una nueva partición?
+* ¿Entiendes el propósito y la estructura del archivo fstab y cómo este afecta el proceso de arranque?
+* ¿Puedes asegurar que una partición nueva se monte automáticamente al inicio?

@@ -2,8 +2,7 @@
 
 ## 1. Muestra la ruta absoluta de tu directorio actual
 
-> :books: **PARA SABER MÁS**
-> Comprende la diferencia entre una ruta relativa y una ruta absoluta.
+> :books: **PARA SABER MÁS** Comprende la diferencia entre una ruta relativa y una ruta absoluta.
 
 ## 2. Cambia al directorio raíz y luego vuelve a tu directorio personal utilizando una ruta relativa
 
@@ -21,9 +20,9 @@
 
 ## Punto de control
 
-Reflexiona sobre lo que has aprendido y responde las siguientes preguntas [Ver solución](Soluciones/ejer03.md):
+Reflexiona sobre lo que has aprendido y responde las siguientes preguntas [Ver solución](soluciones/ejer03.md):
 
-- ¿Cómo se diferencia una ruta relativa de una ruta absoluta?
-- ¿Qué comando utilizas para volver a tu directorio personal desde cualquier lugar?
-- ¿Cómo puedes mover archivos entre diferentes directorios?
-- ¿Qué sucede con el contenido de un directorio si lo eliminas con `rm -r`?
+* ¿Cómo se diferencia una ruta relativa de una ruta absoluta?
+* ¿Qué comando utilizas para volver a tu directorio personal desde cualquier lugar?
+* ¿Cómo puedes mover archivos entre diferentes directorios?
+* ¿Qué sucede con el contenido de un directorio si lo eliminas con `rm -r`?
