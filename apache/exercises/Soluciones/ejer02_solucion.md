@@ -21,6 +21,9 @@ sudo mkdir -p /var/www/skilly.info/public_html
 
 2. Crea un html para tu primera página
 
+~~~sh
+nano /var/www/skilly.info/public_html/index.html
+~~~
 
 3. Asigna permisos a Apache al directorio
 

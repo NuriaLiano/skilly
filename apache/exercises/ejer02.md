@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-El objetivo de este ejercicio es configurar un sitio web básico utilizando el servidor web Apache en un sistema Ubuntu 22. Aprenderás a crear y configurar un Virtual Host para alojar un sitio web, además de modificar algunos aspectos básicos de seguridad y rendimiento. Al final podrás comprobar su funcionamiento a través de un navegador.s
+El objetivo de este ejercicio es configurar un sitio web básico utilizando el servidor web Apache en un sistema Ubuntu 22. Aprenderás a crear y configurar un Virtual Host para alojar un sitio web, además de modificar algunos aspectos básicos de seguridad y rendimiento. Al final podrás comprobar su funcionamiento a través de un navegador.
 
 ## Pasos a seguir
 
