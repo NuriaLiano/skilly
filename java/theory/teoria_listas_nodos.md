@@ -14,23 +14,23 @@ El enlace entre los nodos se establece mediante las referencias. Cada nodo tiene
 
 Existen diferentes tipos de listas enlazadas, cada una con sus propias características y usos:
 
-- **Lista enlazada simple**: Cada nodo contiene un valor y una referencia al siguiente nodo. La navegación en esta lista se realiza de forma unidireccional, es decir, solo se puede avanzar en una dirección (de principio a fin).
-- **Lista enlazada doble**: Cada nodo contiene un valor, una referencia al nodo siguiente y una referencia al nodo anterior. Esto permite la navegación en ambas direcciones (de principio a fin y de fin a principio).
-- **Lista enlazada circular**: El último nodo de la lista tiene una referencia que apunta al primer nodo, formando un ciclo. Esto significa que la lista no tiene un principio ni un final distintos, y se puede recorrer continuamente.
+* **Lista enlazada simple**: Cada nodo contiene un valor y una referencia al siguiente nodo. La navegación en esta lista se realiza de forma unidireccional, es decir, solo se puede avanzar en una dirección (de principio a fin).
+* **Lista enlazada doble**: Cada nodo contiene un valor, una referencia al nodo siguiente y una referencia al nodo anterior. Esto permite la navegación en ambas direcciones (de principio a fin y de fin a principio).
+* **Lista enlazada circular**: El último nodo de la lista tiene una referencia que apunta al primer nodo, formando un ciclo. Esto significa que la lista no tiene un principio ni un final distintos, y se puede recorrer continuamente.
 
 ### Ventajas y desventajas
 
 Ventajas
 
-- Flexibilidad en la asignación de memoria
-- Inserción y eliminación eficientes
-- Uso eficiente del espacio
+* Flexibilidad en la asignación de memoria
+* Inserción y eliminación eficientes
+* Uso eficiente del espacio
 
 Desventajas
 
-- Acceso secuencial
-- Uso de memoria adicional
-- Complejidad en la implementación
+* Acceso secuencial
+* Uso de memoria adicional
+* Complejidad en la implementación
 
 ## Estructura de una lista enlazada
 
@@ -40,15 +40,15 @@ Una lista enlazada comienza con un nodo inicial llamado cabeza. La cabeza contie
 
 #### Nodo inicial (cabeza)
 
-![nodo cabeza](../../img/listas_enlazadas1.png)
+![nodo cabeza](../../img/listas\_enlazadas1.png)
 
 #### Cola
 
-![cola](../../img/listas_enlazadas2.png)
+![cola](../../img/listas\_enlazadas2.png)
 
 #### Nodo final
 
-![nodo final](../../img/listas_enlazadas3.png)
+![nodo final](../../img/listas\_enlazadas3.png)
 
 ### Enlace entre nodos
 
@@ -66,103 +66,100 @@ El uso de genéricos en Java permite crear estructuras de datos más genéricas 
 
 ### Clase NODO
 
-- Campos de la clase (`valor`, `siguiente`)
-- Métodos (`getValor()`, `setValor()`, `getSiguiente()`, `setSiguiente()`)
+* Campos de la clase (`valor`, `siguiente`)
+* Métodos (`getValor()`, `setValor()`, `getSiguiente()`, `setSiguiente()`)
 
 La clase Nodo representa un elemento individual en la lista enlazada. Contiene dos campos principales:
 
-- **valor**: almacena el valor o dato que queremos almacenar en el nodo.
-- **siguiente**: es una referencia al siguiente nodo en la lista.
+* **valor**: almacena el valor o dato que queremos almacenar en el nodo.
+* **siguiente**: es una referencia al siguiente nodo en la lista.
 
 Además de los campos, la clase Nodo también proporciona métodos para acceder y modificar estos campos:
 
-- **getValor()**: devuelve el valor almacenado en el nodo.
-- **setValor()**: establece un nuevo valor para el nodo.
-- **getSiguiente()**: devuelve la referencia al siguiente nodo.
-- **setSiguiente()**: establece la referencia al siguiente nodo.
+* **getValor()**: devuelve el valor almacenado en el nodo.
+* **setValor()**: establece un nuevo valor para el nodo.
+* **getSiguiente()**: devuelve la referencia al siguiente nodo.
+* **setSiguiente()**: establece la referencia al siguiente nodo.
 
 ### Clase ListaEnlazada
 
-- Campos de la clase (`cabeza`)
-- Métodos (`estaVacia()`, `agregar()`, `mostrar()`, `insertarAlFinal()`, `insertarAlInicio()`, etc.)
+* Campos de la clase (`cabeza`)
+* Métodos (`estaVacia()`, `agregar()`, `mostrar()`, `insertarAlFinal()`, `insertarAlInicio()`, etc.)
 
 La clase ListaEnlazada es la representación de la lista enlazada en su conjunto. Contiene un campo principal:
 
-- **cabeza**: es una referencia al primer nodo de la lista.
+* **cabeza**: es una referencia al primer nodo de la lista.
 
 Además, la clase ListaEnlazada implementa varios métodos que permiten realizar operaciones en la lista enlazada, como:
 
-- **estaVacia()**: verifica si la lista está vacía.
-- **agregar()**: agrega un nuevo nodo a la lista.
-- **mostrar()**: muestra todos los valores de los nodos en la lista.
-- **insertarAlFinal()**: inserta un nuevo nodo al final de la lista.
-- **insertarAlInicio()**: inserta un nuevo nodo al inicio de la lista.
-Otros métodos según sea necesario, como eliminar un nodo, buscar un valor específico, etc.
+* **estaVacia()**: verifica si la lista está vacía.
+* **agregar()**: agrega un nuevo nodo a la lista.
+* **mostrar()**: muestra todos los valores de los nodos en la lista.
+* **insertarAlFinal()**: inserta un nuevo nodo al final de la lista.
+* **insertarAlInicio()**: inserta un nuevo nodo al inicio de la lista. Otros métodos según sea necesario, como eliminar un nodo, buscar un valor específico, etc.
 
 ## Operaciones con listas enlazadas
 
 ### Agregar elementos a la lista
 
-- Al principio
-  
-  ~~~java
-  Nodo<E> nuevoNodo = new Nodo<>(elemento);
-  nuevoNodo.setSiguiente(cabeza);
-  cabeza = nuevoNodo;
-  ~~~
+*   Al principio
 
-- Al final
-
-  ~~~java
+    ```java
     Nodo<E> nuevoNodo = new Nodo<>(elemento);
-    if (cabeza == null) {
-            cabeza = nuevoNodo;
-        } else {
-            Nodo<E> puntero = cabeza;
-            while (puntero.getSiguiente() != null) {
-                puntero = puntero.getSiguiente();
-            }
-            puntero.setSiguiente(nuevoNodo);
-        }
-  ~~~
+    nuevoNodo.setSiguiente(cabeza);
+    cabeza = nuevoNodo;
+    ```
+*   Al final
 
-- En una posición específica
+    ```java
+      Nodo<E> nuevoNodo = new Nodo<>(elemento);
+      if (cabeza == null) {
+              cabeza = nuevoNodo;
+          } else {
+              Nodo<E> puntero = cabeza;
+              while (puntero.getSiguiente() != null) {
+                  puntero = puntero.getSiguiente();
+              }
+              puntero.setSiguiente(nuevoNodo);
+          }
+    ```
+*   En una posición específica
 
-  ~~~java
-  if (posicion < 0) {
-            throw new IllegalArgumentException("La posición debe ser mayor o igual a 0");
-        }
-        if (posicion == 0) {
-            agregarAlPrincipio(elemento);
-        } else {
-            Nodo<E> nuevoNodo = new Nodo<>(elemento);
-            Nodo<E> puntero = cabeza;
-            int contador = 0;
-            while (contador < posicion - 1 && puntero != null) {
-                puntero = puntero.getSiguiente();
-                contador++;
-            }
-            if (puntero == null) {
-                throw new IndexOutOfBoundsException("La posición está fuera de rango");
-            }
-            nuevoNodo.setSiguiente(puntero.getSiguiente());
-            puntero.setSiguiente(nuevoNodo);
-        }
-  ~~~
+    ```java
+    if (posicion < 0) {
+              throw new IllegalArgumentException("La posición debe ser mayor o igual a 0");
+          }
+          if (posicion == 0) {
+              agregarAlPrincipio(elemento);
+          } else {
+              Nodo<E> nuevoNodo = new Nodo<>(elemento);
+              Nodo<E> puntero = cabeza;
+              int contador = 0;
+              while (contador < posicion - 1 && puntero != null) {
+                  puntero = puntero.getSiguiente();
+                  contador++;
+              }
+              if (puntero == null) {
+                  throw new IndexOutOfBoundsException("La posición está fuera de rango");
+              }
+              nuevoNodo.setSiguiente(puntero.getSiguiente());
+              puntero.setSiguiente(nuevoNodo);
+          }
+    ```
 
 ### Mostrar los elementos de la lista
 
-~~~java
+```java
     Nodo<E> puntero = cabeza;
         while (puntero != null) {
             System.out.println(puntero.getValor());
             puntero = puntero.getSiguiente();
         }
-~~~
+```
 
 ### Obtener un elemento de la lista por posición
 
-~~~java
+```java
 if (posicion < 0) {
             throw new IllegalArgumentException("La posición debe ser mayor o igual a 0");
         }
@@ -176,11 +173,11 @@ if (posicion < 0) {
             throw new IndexOutOfBoundsException("La posición está fuera de rango");
         }
         return puntero.getValor();
-~~~
+```
 
 ### Contar la cantidad de elementos en la lista
 
-~~~java
+```java
 int contador = 0;
         Nodo<E> puntero = cabeza;
         while (puntero != null) {
@@ -188,67 +185,65 @@ int contador = 0;
             puntero = puntero.getSiguiente();
         }
         return contador;  
-~~~
+```
 
 ### Verificar si la lista está vacía
 
-~~~java
+```java
   return cabeza == null;
-~~~
+```
 
 ### Eliminar elementos de la lista
 
-- Al principio
+*   Al principio
 
-  ~~~java
-  if (cabeza != null) {
-            Nodo<E> primerNodo = cabeza;
-            cabeza = cabeza.getSiguiente();
-            primerNodo.setSiguiente(null);
-        }  
-  ~~~
+    ```java
+    if (cabeza != null) {
+              Nodo<E> primerNodo = cabeza;
+              cabeza = cabeza.getSiguiente();
+              primerNodo.setSiguiente(null);
+          }  
+    ```
+*   Al final
 
-- Al final
+    ```java
+    if (cabeza != null) {
+              if (cabeza.getSiguiente() == null) {
+                  cabeza = null;
+              } else {
+                  Nodo<E> puntero = cabeza;
+                  while (puntero.getSiguiente().getSiguiente() != null) {
+                      puntero = puntero.getSiguiente();
+                  }
+                  Nodo<E> ultimoNodo = puntero.getSiguiente();
+                  puntero.setSiguiente(null);
+                  ultimoNodo = null;
+              }
+          } 
+    ```
+*   Por posición
 
-  ~~~java
-  if (cabeza != null) {
-            if (cabeza.getSiguiente() == null) {
-                cabeza = null;
-            } else {
-                Nodo<E> puntero = cabeza;
-                while (puntero.getSiguiente().getSiguiente() != null) {
-                    puntero = puntero.getSiguiente();
-                }
-                Nodo<E> ultimoNodo = puntero.getSiguiente();
-                puntero.setSiguiente(null);
-                ultimoNodo = null;
-            }
-        } 
-  ~~~
-
-- Por posición
-
-  ~~~java
-  if (posicion < 0) {
-            throw new IllegalArgumentException("La posición debe ser mayor o igual a 0");
-        }
-        if (posicion == 0) {
-            eliminarAlPrincipio();
-        } else {
-            Nodo<E> puntero = cabeza;
-            int contador = 0;
-            while (contador < posicion - 1 && puntero != null) {
-                puntero = puntero.getSiguiente();
-                contador++;
-            }
-            if (puntero == null || puntero.getSiguiente() == null) {
-                throw new IndexOutOfBoundsException("La posición está fuera de rango");
-            }
-            Nodo<E> nodoAEliminar = puntero.getSiguiente();
-            puntero.setSiguiente(nodoAEliminar.getSiguiente());
-            nodoAEliminar.setSiguiente(null);
-        }
-  ~~~
+    ```java
+    if (posicion < 0) {
+              throw new IllegalArgumentException("La posición debe ser mayor o igual a 0");
+          }
+          if (posicion == 0) {
+              eliminarAlPrincipio();
+          } else {
+              Nodo<E> puntero = cabeza;
+              int contador = 0;
+              while (contador < posicion - 1 && puntero != null) {
+                  puntero = puntero.getSiguiente();
+                  contador++;
+              }
+              if (puntero == null || puntero.getSiguiente() == null) {
+                  throw new IndexOutOfBoundsException("La posición está fuera de rango");
+              }
+              Nodo<E> nodoAEliminar = puntero.getSiguiente();
+              puntero.setSiguiente(nodoAEliminar.getSiguiente());
+              nodoAEliminar.setSiguiente(null);
+          }
+    ```
 
 ### Casos especiales
 
@@ -259,7 +254,7 @@ En Java, la liberación de memoria se realiza automáticamente mediante el recol
 ## Diferencias entre arrays, arrayslist y listas enlazadas
 
 | Característica        | Arrays      | ArrayList | Listas Enlazadas |
-|-----------------------|-------------|-----------|------------------|
+| --------------------- | ----------- | --------- | ---------------- |
 | Tipo de estructura    | Estática    | Dinámica  | Dinámica         |
 | Tamaño                | Fijo        | Dinámico  | Dinámico         |
 | Almacenamiento        | Contiguo    | Contiguo  | No contiguo      |

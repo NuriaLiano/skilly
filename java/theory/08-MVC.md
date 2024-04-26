@@ -4,24 +4,21 @@
 
 El patrón Modelo-Vista-Controlador (MVC) es un patrón de diseño de software que divide una aplicación en tres componentes principales:
 
-- Modelo:
-  Contiene los datos y la lógica de negocio. El modelo se encarga de acceder a la base de datos, procesar datos, aplicar reglas de negocio y notificar a las vistas sobre los cambios en los datos.
-- Vista:
-  Presenta los datos del modelo al usuario. En una aplicación de escritorio, la vista sería la interfaz gráfica de usuario (GUI). La vista muestra la información y recibe la entrada del usuario, pero no realiza operaciones lógicas sobre los datos.
-- Controlador:
-  Actúa como intermediario entre el modelo y la vista. Responde a las entradas del usuario (por ejemplo, clics de botón), manipula el modelo y actualiza la vista.  
+* Modelo: Contiene los datos y la lógica de negocio. El modelo se encarga de acceder a la base de datos, procesar datos, aplicar reglas de negocio y notificar a las vistas sobre los cambios en los datos.
+* Vista: Presenta los datos del modelo al usuario. En una aplicación de escritorio, la vista sería la interfaz gráfica de usuario (GUI). La vista muestra la información y recibe la entrada del usuario, pero no realiza operaciones lógicas sobre los datos.
+* Controlador: Actúa como intermediario entre el modelo y la vista. Responde a las entradas del usuario (por ejemplo, clics de botón), manipula el modelo y actualiza la vista.
 
 ## ¿Para qué sirve?
 
 El patrón Modelo-Vista-Controlador (MVC) sirve para varios propósitos clave en el desarrollo de software.
 
-- Separación de Responsabilidades
-- Facilita la Prueba
-- Flexibilidad y Reusabilidad
-- Desarrollo Paralelo
-- Desarrollo Paralelo
-- Mejora la Mantenibilidad
-- Soporte para Interfaces de Usuario Múltiples
+* Separación de Responsabilidades
+* Facilita la Prueba
+* Flexibilidad y Reusabilidad
+* Desarrollo Paralelo
+* Desarrollo Paralelo
+* Mejora la Mantenibilidad
+* Soporte para Interfaces de Usuario Múltiples
 
 ## ¿Cómo se comunican entre sí?
 
@@ -40,29 +37,24 @@ El patrón Modelo-Vista-Controlador (MVC) se basa en la comunicación entre sus 
    1. Mecanismo: Aunque el Controlador no actualiza directamente la Vista, puede enviar comandos para cambiar la presentación o el estado de la Vista.
    2. Ejemplo: En una aplicación de juego, si el jugador pierde una vida, el Controlador puede instruir a la Vista para que muestre un mensaje de "Vida Perdida" o actualice la representación gráfica de las vidas restantes.
 
-![imagen-mvc](../../../img/mvc.png)
+![imagen-mvc](../../img/mvc.png)
 
-Veamos todo esto con un ejemplo completo. Imagina una aplicación de lista de tareas (TODO List)
-Tenemos los siguientes componentes:
-    - Modelo: Contiene una lista de tareas
-    - Vista: Muestra las tareas en una lista en la interfaz de usuario
-    - Controlador: Gestiona la adición de nuevas tareas
+Veamos todo esto con un ejemplo completo. Imagina una aplicación de lista de tareas (TODO List) Tenemos los siguientes componentes: - Modelo: Contiene una lista de tareas - Vista: Muestra las tareas en una lista en la interfaz de usuario - Controlador: Gestiona la adición de nuevas tareas
 
 Ahora vamos a simular la ejecución del programa:
 
-- Cuando el usuario escribe una nueva tarea y presiona "Añadir" (Vista), esta acción se comunica al Controlador.
-- El Controlador procesa esta acción y añade la nueva tarea al Modelo.
-- El Modelo, al ser actualizado, notifica a la Vista (o Vistas) de la lista de tareas que hay un cambio.
-- La Vista, al recibir la notificación, se actualiza mostrando la nueva tarea añadida.
+* Cuando el usuario escribe una nueva tarea y presiona "Añadir" (Vista), esta acción se comunica al Controlador.
+* El Controlador procesa esta acción y añade la nueva tarea al Modelo.
+* El Modelo, al ser actualizado, notifica a la Vista (o Vistas) de la lista de tareas que hay un cambio.
+* La Vista, al recibir la notificación, se actualiza mostrando la nueva tarea añadida.
 
 ## Ejemplo
 
-Vale, nos dejamos de lío y vamos a la práctica. En este ejemplo vamos a ver como implementar MVC usando Java Swing pero tiene muchas más utilidades.
-Esta aplicación básica permite a un usuario actualizar un mensaje y ver el mensaje actualizado en la interfaz de usuario. 
+Vale, nos dejamos de lío y vamos a la práctica. En este ejemplo vamos a ver como implementar MVC usando Java Swing pero tiene muchas más utilidades. Esta aplicación básica permite a un usuario actualizar un mensaje y ver el mensaje actualizado en la interfaz de usuario.
 
-- Modelo: El Modelo almacena los datos. En este caso, simplemente guardará un mensaje.
+* Modelo: El Modelo almacena los datos. En este caso, simplemente guardará un mensaje.
 
-~~~java
+```java
 public class MensajeModelo {
     private String mensaje;
 
@@ -74,11 +66,11 @@ public class MensajeModelo {
         this.mensaje = mensaje;
     }
 }
-~~~
+```
 
-- Vista: La Vista muestra la representación visual de los datos. Aquí, creamos una simple interfaz de usuario con un campo de texto y un botón.
+* Vista: La Vista muestra la representación visual de los datos. Aquí, creamos una simple interfaz de usuario con un campo de texto y un botón.
 
-~~~java
+```java
 import javax.swing.*;
 
 public class MensajeVista extends JFrame {
@@ -107,11 +99,11 @@ public class MensajeVista extends JFrame {
         btnActualizar.addActionListener(escucharParaBoton);
     }
 }
-~~~
+```
 
-- Controlador: El Controlador maneja la lógica que responde a las acciones del usuario y actualiza el Modelo.
+* Controlador: El Controlador maneja la lógica que responde a las acciones del usuario y actualiza el Modelo.
 
-~~~java
+```java
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -132,11 +124,11 @@ public class MensajeControlador {
         });
     }
 }
-~~~
+```
 
-- Principal: Aquí es donde se conectan el Modelo, la Vista y el Controlador.
+* Principal: Aquí es donde se conectan el Modelo, la Vista y el Controlador.
 
-~~~java
+```java
 public class MVCEjemplo {
     public static void main(String[] args) {
         MensajeModelo modelo = new MensajeModelo();
@@ -146,4 +138,4 @@ public class MVCEjemplo {
         vista.setVisible(true);
     }
 }+
-~~~
+```

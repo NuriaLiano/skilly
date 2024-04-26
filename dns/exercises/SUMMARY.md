@@ -1,0 +1,17 @@
+# Table of contents
+
+* [Iniciación en DNS](README.md)
+* [Entendiendo BIND9: Configuración básica de un dominio](ejer02.md)
+* [Entendiendo BIND9: Configuración de un cliente DNS](ejer03.md)
+* [Entendiendo BIND9: configuración de subdominios](ejer04.md)
+* [Entendiendo BIND9: Configuración de un servidor DNS esclavo](ejer05.md)
+* [Entendiendo BIND9: Zonas inversas](ejer06.md)
+* [Entendiendo BIND9: Delegación de zona](ejer07.md)
+* [Soluciones](soluciones/README.md)
+  * [\[Solución\] Ejercicio iniciación de DNS](Soluciones/ejer01\_resolve.md)
+  * [\[Solución\] Entendiendo BIND9: Configuración básica de un dominio](soluciones/ejer02\_resolve.md)
+  * [\[Solución\] Entendiendo BIND9: Configuración de un cliente DNS](soluciones/ejer03\_resolve.md)
+  * [\[Solución\] Entendiendo BIND9: configuración de subdominios](soluciones/ejer04\_resolve.md)
+  * [Entendiendo BIND9: Configuración de un servidor DNS esclavo](soluciones/ejer05\_resolve.md)
+  * [Entendiendo BIND9: Zonas inversas](soluciones/ejer06\_resolve.md)
+  * [Entendiendo BIND9: Delegación de zona](soluciones/ejer07\_resolve.md)

@@ -26,10 +26,10 @@ El comando `top` proporciona una vista en tiempo real de la actividad del sistem
 
 El directorio `/proc` contiene una estructura de sistema de archivos virtual que proporciona información del sistema en tiempo real. Algunos archivos y directorios relevantes incluyen:
 
-- `/proc/meminfo`: Muestra información de la memoria del sistema.
-- `/proc/cpuinfo`: Muestra información detallada de la CPU.
-- `/proc/partitions`: Lista de las particiones detectadas por el sistema.
-- `/proc/loadavg`: Muestra los promedios de carga del sistema.
+* `/proc/meminfo`: Muestra información de la memoria del sistema.
+* `/proc/cpuinfo`: Muestra información detallada de la CPU.
+* `/proc/partitions`: Lista de las particiones detectadas por el sistema.
+* `/proc/loadavg`: Muestra los promedios de carga del sistema.
 
 Explora este directorio para obtener información detallada sobre el sistema.
 
@@ -43,9 +43,8 @@ Este archivo registra una variedad de eventos del sistema, incluyendo arranque d
 
 ### Comandos útiles para trabajar con syslog:
 
-- `tail` para ver las últimas líneas del archivo de registro:
-
-- `grep` para buscar mensajes específicos dentro de los archivos de registro:
+* `tail` para ver las últimas líneas del archivo de registro:
+* `grep` para buscar mensajes específicos dentro de los archivos de registro:
 
 > :books: **PARA SABER MÁS**
 >
@@ -55,8 +54,8 @@ Este archivo registra una variedad de eventos del sistema, incluyendo arranque d
 
 Antes de concluir, asegúrate de:
 
-- Conocer las herramientas básicas de monitorización y cómo utilizarlas.
-- Entender la estructura y propósito del directorio `/proc`.
-- Saber cómo acceder y analizar los archivos de registro del sistema, especialmente `/var/log/syslog`.
+* Conocer las herramientas básicas de monitorización y cómo utilizarlas.
+* Entender la estructura y propósito del directorio `/proc`.
+* Saber cómo acceder y analizar los archivos de registro del sistema, especialmente `/var/log/syslog`.
 
-[Ver solución](Soluciones/ejer08.md)
+[Ver solución](soluciones/ejer08.md)

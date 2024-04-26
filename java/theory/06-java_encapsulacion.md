@@ -6,15 +6,15 @@ La encapsulación es uno de los cuatro conceptos fundamentales de la Programaci�
 
 1. **Clase**: Las clases encapsulan datos (atributos) y comportamientos (métodos) relacionados.
 2. **Atributos** (Variables de Instancia): La encapsulación implica la definición de atributos como privados o protegidos, lo que significa que solo pueden accederse y modificarse a través de métodos públicos.
-3. **Métodos** (Funciones de Instancia):  Los métodos públicos proporcionan una interfaz para interactuar con los atributos privados y realizar acciones en el objeto.
+3. **Métodos** (Funciones de Instancia): Los métodos públicos proporcionan una interfaz para interactuar con los atributos privados y realizar acciones en el objeto.
 4. **Modificadores de acceso**: Java utiliza modificadores de acceso como public, private, protected y el modificador por defecto para controlar la visibilidad y el acceso a los atributos y métodos de una clase. Esto es esencial para la encapsulación.
 
 ## Beneficios
 
-- **Ocultamiento de Datos**: Los detalles internos (atributos) de un objeto se ocultan y no son directamente accesibles desde fuera de la clase. Esto evita la manipulación no autorizada de datos.
-- **Control de Acceso**: Los métodos públicos proporcionan un control preciso sobre cómo se accede y modifica el estado interno del objeto. Puedes implementar lógica para garantizar la integridad de los datos.
-- **Flexibilidad**: Cambiar la implementación interna de una clase (por ejemplo, cambiar un atributo de una variable a una propiedad calculada) no afecta a los clientes que utilizan la clase.
-- **Reutilización de Código**: Los objetos encapsulados pueden ser reutilizados en diferentes partes del programa sin preocuparse por los detalles internos.
+* **Ocultamiento de Datos**: Los detalles internos (atributos) de un objeto se ocultan y no son directamente accesibles desde fuera de la clase. Esto evita la manipulación no autorizada de datos.
+* **Control de Acceso**: Los métodos públicos proporcionan un control preciso sobre cómo se accede y modifica el estado interno del objeto. Puedes implementar lógica para garantizar la integridad de los datos.
+* **Flexibilidad**: Cambiar la implementación interna de una clase (por ejemplo, cambiar un atributo de una variable a una propiedad calculada) no afecta a los clientes que utilizan la clase.
+* **Reutilización de Código**: Los objetos encapsulados pueden ser reutilizados en diferentes partes del programa sin preocuparse por los detalles internos.
 
 ## Ejemplo
 
@@ -22,7 +22,7 @@ En este ejempo podemos ver que los atributos 'nombre' y 'edad' son privados, por
 
 **¿Qué podemos hacer para acceder a esos atributos?** Crear métodos públicos que devuelvan o modifiquen el valor de esos atributos como pasa con los métodos 'obtenerNombre()' y 'establecerEdad()'
 
-~~~java
+```java
 public class Persona {
     // Atributos privados
     private String nombre;
@@ -46,4 +46,4 @@ public class Persona {
         }
     }
 }
-~~~
+```
