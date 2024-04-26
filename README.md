@@ -39,7 +39,16 @@ Ex: my container configuration
 - Python 2.5 `pip install -r requirements.txt`
 - Python 3 `pip3 install -r requirements.txt`
 
-### 4. :exclamation: Important steps :exclamation: Edit the container.config.json file and change the file name to '.config.json'
+### 4. Configure the Remote Repositories
+
+>:pencil: Check your current remote repository configuration with the following command
+> ``git remote -v``
+
+```sh
+git remote add github https://github.com/yourUser/yourRepo.git
+```
+
+### 5. :exclamation: Important steps :exclamation: Edit the container.config.json file and change the file name to '.config.json'
 
 This file contains all necessary global variables for execute the script. You must change all values for your own data.
 
@@ -61,7 +70,7 @@ Ex:
 
 When you finish edit It is important rename the file to '.config.json' and move to your container git directory
 
-### 5. :exclamation: Important steps :exclamation: Edit the local.config.json file and change the file name to '.config.json'
+### 6. :exclamation: Important steps :exclamation: Edit the local.config.json file and change the file name to '.config.json'
 
 This file contains all necessary local repo variables for execute the script. You must change all values for your own data.
 
@@ -84,14 +93,14 @@ Ex:
 
 When you finish edit It is important rename the file to '.config.json'. Keep it in repo
 
-### 4. Execute script
+### 7. Execute script
 
 - Python 2.5 `python gitrepos.py`
 - Python 3 `python3 gitrepos.py`
 
-### 5. Now you can use that repository and you can execute `git add` and `git commit -m ""` normally
+### 8. Now you can use that repository and you can execute `git add` and `git commit -m ""` normally
 
-### 6. :warning: But when you execute git push it is neccesary you run the gitPushMirror.sh
+### 9. :warning: But when you execute git push it is neccesary you run the gitPushMirror.sh
 
    ~~~sh
    sh gitPushMirror.sh
