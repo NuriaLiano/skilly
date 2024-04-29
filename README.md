@@ -4,15 +4,32 @@
 
 ## What is GITREPOS
 
-GITREPOS is a Python script that simplifies the automation of tasks related to creating and deleting repositories on GitHub and GitLab. Additionally, it provides the functionality to connect these repositories in a "mirror," enabling changes made in one repository to automatically reflect in the other.
+GITREPOS is a Python script designed to automate the management of repository creation, deletion, and mirroring between GitHub and GitLab. It facilitates seamless synchronization across these platforms, simplifying version control operations for developers.
 
-## What is in GITREPOS repository
+## Contents of GITREPOS repository
 
-- **gitrepos.py**: This is the main script what create and configurate or remove the repositories.
-- **gitPushMirror.sh**: You need copy this script on the repository. This script is only for run `git push` command on both repositories.
-- **requirements.txt**: This file contain all necessary packages for run gitrepos
-- **container.config.json**: This file is an example of how your .config.json (container) will look like
-- **local.config.json**: This file is an example of how your .config.json (local dir repository) will look like
+- **gitrepos.py**: The main Python script for creating, configuring, or removing repositories.
+- **gitPushMirror.sh**: A Bash script to synchronize commits across mirrored repositories using `git push`.
+- **requirements.txt**: Lists all dependencies required to run the scripts.
+- **container.config.json**: Sample configuration file for global settings related to your repositories.
+- **local.config.json**: Sample configuration file for individual repository settings.
+
+## Prerequisites
+The first time you run the script it will ask for all the variables it does not find and generate the `.config.json` file both in the container and locally.
+
+- Python 2.5 or newer.
+- Git 2.39 or newer.
+- Ensure that Git Bash is installed if running on Windows for script execution.
+
+### Gitlab data
+
+- **Username**: "Nuria_Liano"
+- **Gitlab Token**: "asa7f9sd87fsg8sd987sd8g8s"
+
+### Github data
+
+- **Username**: "NuriaLiano"
+- **Github Token**: "asa7f9sd87fsg8sd987sd8g8s"
 
 ## How to run
 
@@ -31,13 +48,13 @@ Ex: my container configuration
 
 - Download the script: `wget https://gitlab.com/Nuria_Liano/gitrepos/-/raw/main/gitrepos.py?inline=false`
 - Clone the repository
-  - SSH  `git clone git@gitlab.com:Nuria_Liano/gitrepos.git`
-  - HTTPS  `git clone https://gitlab.com/Nuria_Liano/gitrepos.git`
+  - SSH:  `git clone git@gitlab.com:Nuria_Liano/gitrepos.git`
+  - HTTPS:  `git clone https://gitlab.com/Nuria_Liano/gitrepos.git`
 
 ### 3. Install all requirements
 
-- Python 2.5 `pip install -r requirements.txt`
-- Python 3 `pip3 install -r requirements.txt`
+- Python 2.5: `pip install -r requirements.txt`
+- Python 3: `pip3 install -r requirements.txt`
 
 ### 4. Configure the Remote Repositories
 
@@ -50,7 +67,7 @@ git remote add github https://github.com/yourUser/yourRepo.git
 
 ### 5. :exclamation: Important steps :exclamation: Edit the container.config.json file and change the file name to '.config.json'
 
-This file contains all necessary global variables for execute the script. You must change all values for your own data.
+- This file contains all necessary global variables for execute the script. You must change all values for your own data.
 
 Example:
 
@@ -68,7 +85,7 @@ Example:
 }
 ~~~
 
-When you finish edit It is important rename the file to '.config.json' and move to your container git directory
+- When you finish edit It is important rename the file to '.config.json' and move to your container git directory
 
 ### 6. :exclamation: Important steps :exclamation: Edit the local.config.json file and change the file name to '.config.json'
 
@@ -193,20 +210,6 @@ Are you sure you want to delete the repository? y/n: y
 [SUCCESS - GITLAB DELETED] testRepo in GITLAB has been deleted
 [SUCCESS - LOCAL DELETED] \gitlab\testRepo has been deleted
 ~~~
-
-## What data I need
-
-The first time you run the script it will ask for all the variables it does not find and generate the `.config.json` file both in the container and locally.
-
-### Gitlab data
-
-- **Username**: "Nuria_Liano"
-- **Gitlab Token**: "asa7f9sd87fsg8sd987sd8g8s"
-
-### Github data
-
-- **Username**: "NuriaLiano"
-- **Github Token**: "asa7f9sd87fsg8sd987sd8g8s"
   
 ## How generate mirror
 
@@ -234,9 +237,9 @@ If you find a problem with the code or have implemented an improvement please op
 
 ## TODOs
 
-TODO: generate .gitingore for ignore .config.json
-TODO: add to README how add gitPushMirror.sh to $PATH on Windows and Linux
-TODO: gitPushBot: script that checks for changes in the repo every X minutes and execute gitPushMirror.sh automatically.
+- [x] generate .gitingore for ignore .config.json
+- [ ] add to README how add gitPushMirror.sh to $PATH on Windows and Linux
+- [ ] gitPushBot: script that checks for changes in the repo every X minutes and execute gitPushMirror.sh automatically.
 
 ## License
 
@@ -254,13 +257,11 @@ Visit my profiles or my website
         <a href="https://gitlab.com/nuria_liano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/gitlab.svg" /></a>
         <a href="https://github.com/nurialiano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/github.svg" /></a>
         <a href="https://twitter.com/nuria_liano" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/twitter.svg"  /></a>
-        <a href="https://www.buymeacoffee.com/lianonuria" target="_blank"><img height="50" src="https://gitlab.com/Nuria_Liano/nurialiano/-/raw/main/icons/by-me-a-coffee.png" /></a>
-        <a href="www.nurialiano.es" target="_blank"><img height="50" src="https://gitlab.com/Nuria_Liano/nurialiano/-/raw/main/icons/nl_logo.png"/></a>
+        <a href="https://www.buymeacoffee.com/lianonuria" target="_blank"><img height="50" src="https://github.com/NuriaLiano/NuriaLiano/raw/master/img/icons/by-me-a-coffee.png" /></a>
     </p>
 </div>
 
 ---
 
-<div>
-    <p align="center">Desarrollado en <a href="https://turismodecantabria.com/inicio"></a> <img src="./icons/cantabria.png" height="30" alt="Cantabria">  con mucho <img src="./icons/metal.png" height="30" alt="metal"> y <img src="./icons/beer.png" height="30" alt="cerveza"></p>
-</div>
+Desarrollado en [Cantabria](https://www.cantabria.es/)💢 con mucho 🤘 y 🍺
+
