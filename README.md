@@ -52,7 +52,7 @@ git remote add github https://github.com/yourUser/yourRepo.git
 
 This file contains all necessary global variables for execute the script. You must change all values for your own data.
 
-Ex:
+Example:
 
 ~~~json
 {
