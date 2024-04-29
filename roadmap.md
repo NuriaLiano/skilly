@@ -2,7 +2,7 @@
 
 ![skilly](https://www.skilly.es/media/img/7AC943_black_transparent.png)
 
-Bienvenido al flipante mundo del desarrollo frontend, donde la creatividad se combina con la tecnología para crear experiencias web de la leche. Esta hoja de ruta te guiará a través de los pasos necesarios para convertirte en un desarrollador frontend competente. Desde los fundamentos básicos hasta las tecnologías avanzadas, aquí encontrarás todo lo que necesitas para iniciar tu viaje en el mundo del frontend.
+Bienvenido/a al flipante mundo del desarrollo frontend, donde la creatividad se combina con la tecnología para crear experiencias web de la leche. Esta hoja de ruta te guiará a través de los pasos necesarios para convertirte en un desarrollador frontend competente. Desde los fundamentos básicos hasta las tecnologías avanzadas, aquí encontrarás todo lo que necesitas para iniciar tu viaje en el mundo del frontend.
 
 > :white_check_mark: **RECOMENDADO**
 > Búsca e investiga más allá de lo que ponga en cualquier hoja de ruta o tutorial. Intenta pensar en por qué haces las cosas y el procedimiento que hay por debajo de lo que estás programando.
