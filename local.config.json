@@ -1,0 +1,12 @@
+{
+    "LOCAL_PATH": "your_path\\gitrepos",
+    "LOCAL_PATH_CONFIG": "your_path\\gitrepos\\.config.json",
+    "GL_VISIBILITY": "public",
+    "GL_ID_REPO": 8937492,
+    "GL_REPO_URL": "https://gitlab.com/username/gitrepos.git",
+    "GH_VISIBILITY": "public",
+    "GH_PROJECT_URL": "https://api.github.com/repos/username/gitrepos",
+    "GH_REPO_URL": "https://github.com/username/gitrepos",
+    "DEFAULT_BRANCH": "master",
+    "README_PATH": "your_path\\gitlab\\gitrepos\\README.md"
+}
