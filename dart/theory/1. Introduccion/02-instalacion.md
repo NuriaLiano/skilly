@@ -13,7 +13,7 @@ ces.
 
 > :woman_teacher: **EXPLICACIÓN**
 > ¿Qué es Dart SDK?
-> 
+>  (Software Development Kit) es un conjunto de herramientas de programación para el lenguaje de programación Dart
 
 ### Windows
 
