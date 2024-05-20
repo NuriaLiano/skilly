@@ -87,7 +87,7 @@ Añade la siguiente línea para cambiar los permisos durante la noche y luego re
 
 ## Pista sobre los permisos
 
-![imagen permisos](../../img/permisos.png)
+![imagen permisos](https://gitlab.com/Nuria_Liano/skilly/-/raw/023ab0707fc4a6ff18f1cc831777c7a8fd94a70c/img/permisos.png)
 
 ## Punto de control
 Reflexiona sobre lo que has aprendido y responde a las siguientes preguntas [Ver solución]():
