@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-
+Instalar y configurar el servidor vsFTP en un sistema Ubuntu, permitiendo el acceso anónimo y configurando un usuario específico para el acceso FTP, asegurando que los permisos y las políticas de acceso estén correctamente establecidas. Verificar la correcta operación del servicio mediante pruebas de conexión y transferencia de archivos, y revisar los registros para identificar posibles errores o incidencias.
 
 ## Pasos a seguir
 
